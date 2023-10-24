@@ -38,7 +38,7 @@ namespace Shop
             }
             string part;
             int cena;
-            Console.WriteLine($"Сколько товаров вы хотите добавить в виде ");
+            Console.WriteLine($"Сколько товаров вы хотите добавить в виде \"Название товара\" \"Цена товара\"");
             int count = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < count; i++)
             {
