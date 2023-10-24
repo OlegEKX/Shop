@@ -33,7 +33,8 @@ namespace Shop
 
         public void AddToSklad(string name, int price)
         {
-            new AutoParts(name, price);
+            
+            autoParts.Add(new AutoParts(name, price));
         }
     }
 
