@@ -36,15 +36,19 @@ namespace Shop
                 }
                 
             }
-            string part;
-            int cena;
-            Console.WriteLine($"Сколько товаров вы хотите добавить в виде \"Название товара\" \"Цена товара\"");
+            /*string part;*/
+            /*int cena;*/
+            Console.WriteLine($"Сколько товаров вы хотите добавить на склад сначала \"Название товара\", а потом \"Цена товара\"");
             int count = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < count; i++)
             {
-                autoParts.AddToSklad(part = Console.ReadLine(), cena = Convert.ToInt32(Console.ReadLine()));
+                string part = Console.ReadLine();
+                int cena = Convert.ToInt32(Console.ReadLine())
+                autoParts.AddToSklad(part, cena);
             }
+
             /*autoParts.AddToSklad(part = Console.ReadLine(), cena = Convert.ToInt32(Console.ReadLine()));*/
+            
         }
     }
 }
