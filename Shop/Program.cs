@@ -42,7 +42,9 @@ namespace Shop
             int count = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < count; i++)
             {
+                Console.WriteLine($"Введите название запчасти");
                 string part = Console.ReadLine();
+                Console.WriteLine($"Введите стоимость данной запчасти");
                 int cena = Convert.ToInt32(Console.ReadLine());
                 autoParts.AddToSklad(part, cena);
             }

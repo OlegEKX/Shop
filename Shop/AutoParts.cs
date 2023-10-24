@@ -27,7 +27,7 @@ namespace Shop
         {
             for (int i = 0; i < autoParts.Count; i++)
             {
-                autoParts[i].Vivod();
+                autoParts[i].Vivod(i + 1);
             }
         }
 
@@ -49,9 +49,9 @@ namespace Shop
             Price = price;
         }
 
-        public void Vivod()
+        public void Vivod(int number)
         {
-            Console.WriteLine($"{Tovar} {Price}");
+            Console.WriteLine($"{number}. {Tovar} {Price}");
         }
     }
 }
