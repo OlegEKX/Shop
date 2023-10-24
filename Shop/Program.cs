@@ -48,7 +48,27 @@ namespace Shop
             }
 
             /*autoParts.AddToSklad(part = Console.ReadLine(), cena = Convert.ToInt32(Console.ReadLine()));*/
-            
+            Console.WriteLine($"Выберите действие по цифре");
+            Console.WriteLine($"1. Показать ассортимент товаров");
+            number = Convert.ToInt32(Console.ReadLine());
+            if (number == 1)
+            {
+                autoParts.ShowTovar();
+            }
+            else
+            {
+                while (number != 1)
+                {
+                    Console.WriteLine($"Выберите действие");
+                    Console.WriteLine($"1. Показать ассортимент товаров");
+                    number = Convert.ToInt32(Console.ReadLine());
+                    if (number == 1)
+                    {
+                        autoParts.ShowTovar();
+                    }
+                }
+
+            }
         }
     }
 }
