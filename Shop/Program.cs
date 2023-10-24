@@ -43,7 +43,7 @@ namespace Shop
             for (int i = 0; i < count; i++)
             {
                 string part = Console.ReadLine();
-                int cena = Convert.ToInt32(Console.ReadLine())
+                int cena = Convert.ToInt32(Console.ReadLine());
                 autoParts.AddToSklad(part, cena);
             }
 
